@@ -1,10 +1,15 @@
 import streamlit as st
 
 from functions_explore_page import (
-    SOM_clustering_grid, additional_features_heat_map,
-    correlation_between_additional_features_heat_map, load_obj,
-    plot_concelhos_in_risk_neurons, plot_raw_incidências_per_neuron,
-    processing_all_needed_data, processing_incidence_needed_data)
+    SOM_clustering_grid,
+    additional_features_heat_map,
+    correlation_between_additional_features_heat_map,
+    load_obj,
+    plot_concelhos_in_risk_neurons,
+    plot_raw_incidências_per_neuron,
+    processing_all_needed_data,
+    processing_incidence_needed_data,
+)
 
 
 def show_explore_data_page(raw_data_Covid19, Data_incidences, all_data):
