@@ -1,3 +1,6 @@
-libgdal-dev
-python3-geopandas_0.4.0-3_all.deb
-gdal-bin
+GDAL
+Fiona
+pyproj
+Rtree
+Shapely
+make
