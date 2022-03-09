@@ -24,10 +24,7 @@ decorator==5.1.1
 defusedxml==0.7.1
 entrypoints==0.4
 executing==0.8.3
-Fiona==1.8.21
 fonttools==4.29.1
-GDAL==3.4.1
-geopandas==0.10.2
 gitdb==4.0.9
 GitPython==3.1.27
 idna==3.3
@@ -81,14 +78,12 @@ Pygments==2.11.2
 pylint==2.12.1
 Pympler==1.0.1
 pyparsing==3.0.7
-pyproj==3.2.1
 pyrsistent==0.18.1
 python-dateutil==2.8.2
 pytz==2021.3
 pytz-deprecation-shim==0.1.0.post0
 pyzmq==22.3.0
 requests==2.27.1
-Rtree==0.9.7
 scikit-learn==1.0.2
 scipy==1.7.3
 seaborn==0.11.2
@@ -96,7 +91,6 @@ semver==2.13.0
 Send2Trash==1.8.0
 setuptools==60.9.3
 ez_setup==0.9
-Shapely==1.8.1.post1
 six==1.16.0
 sklearn==0.0
 smmap==5.0.0
