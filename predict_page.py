@@ -1,6 +1,5 @@
 # Importe de Todas as Bibliotecas Necessárias
 import streamlit as st
-from streamlit import caching
 
 from functions_explore_page import load_obj
 from functions_predict_page import (
@@ -9,8 +8,6 @@ from functions_predict_page import (
     neuron_assignment_total,
     plot_concelhos_classified_together,
 )
-
-caching.clear_cache()
 
 
 def load_predict_page(all_data):
