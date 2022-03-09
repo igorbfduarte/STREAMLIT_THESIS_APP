@@ -1,10 +1,16 @@
 # Importe de Todas as Bibliotecas Necessárias
 import streamlit as st
+from streamlit import caching
 
 from functions_explore_page import load_obj
-from functions_predict_page import (classify, forecast_new_data_input_mappings,
-                                    neuron_assignment_total,
-                                    plot_concelhos_classified_together)
+from functions_predict_page import (
+    classify,
+    forecast_new_data_input_mappings,
+    neuron_assignment_total,
+    plot_concelhos_classified_together,
+)
+
+caching.clear_cache()
 
 
 def load_predict_page(all_data):
@@ -19,7 +25,10 @@ def load_predict_page(all_data):
     """
     )
     # create a selectorbox as a sidebar for the user in the app to use, to choose one of the 5 time intervals defined
-    concelho = st.selectbox("Select New 'Concelho' to Predict", tuple(all_data.index),)
+    concelho = st.selectbox(
+        "Select New 'Concelho' to Predict",
+        tuple(all_data.index),
+    )
 
     # computes a df where is shown for each 'concelho'(rows) the neurons where it was mapped to
     # at each of the time stages(columns)

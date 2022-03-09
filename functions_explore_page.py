@@ -100,7 +100,7 @@ import the geodataframes necessary for the plotting
 def importing_lat_long_concelho_data():
     # districts_format = gpd.read_file('districts_shape_file\districts_format.shp')
     concelhos_format = gpd.read_file(
-        r"Geographic_Info\concelhos_shape_file\concelhos_format.shp"
+        r"Geographic_Info/concelhos_shape_file/concelhos_format.shp"
     )
     concelhos_format.set_index("Concelho", inplace=True)
     # to avoid a keyerror from the mismatch between Ponte de Sor as it s in the clustering_groups and
@@ -109,7 +109,7 @@ def importing_lat_long_concelho_data():
         "Ponte de Sôr", "Ponte de Sor"
     )
     concelhos_lat_long_geo_data = gpd.read_file(
-        r"Geographic_Info\concelhos_lat_long_shapefile\concelhos_lat_long.shp"
+        r"Geographic_Info/concelhos_lat_long_shapefile/concelhos_lat_long.shp"
     )
     concelhos_lat_long_geo_data.set_index("Concelho", inplace=True)
     return concelhos_format, concelhos_lat_long_geo_data
