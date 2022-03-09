@@ -95,6 +95,7 @@ seaborn==0.11.2
 semver==2.13.0
 Send2Trash==1.8.0
 setuptools==60.9.3
+ez_setup==0.9
 Shapely==1.8.1.post1
 six==1.16.0
 sklearn==0.0
