@@ -25,6 +25,7 @@ Auxiliary Function to save and load objects using the pickle module
 """
 
 
+@st.cache
 def load_obj(name):
     with open("objetos/" + name + ".pkl", "rb") as f:
         return pickle.load(f)
