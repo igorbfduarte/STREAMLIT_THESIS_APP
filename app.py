@@ -4,6 +4,7 @@ import streamlit as st
 from explore_data import show_explore_data_page
 from predict_page import load_predict_page
 
+# the theme of the web app is defined in the config.toml file
 st.set_page_config(
     page_title="Covid-19 App",
     layout="wide",
